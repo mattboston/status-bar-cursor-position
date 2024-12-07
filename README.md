@@ -10,7 +10,7 @@ Displays the current line and column number in the status bar in the format: `Ln
 
 ## Requirements
 
-VS Code 1.60.0 or higher, equivalent version of Cursor
+VS Code 1.93.0 or higher, equivalent version of Cursor
 
 ## Installation
 
