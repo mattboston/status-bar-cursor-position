@@ -2,24 +2,46 @@
     "name": "status-bar-cursor-position",
     "displayName": "Status Bar Cursor Position",
     "description": "Shows cursor position in status bar for Cursor Editor",
-    "version": "0.1.0",
+    "version": "0.2.0",
+    "license": "GPL-3.0",
     "publisher": "mattboston",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mattboston/status-bar-cursor-position"
+    },
+    "author": {
+        "name": "Matt Shields",
+        "email": "matt@shields.tv",
+        "url": "https://shields.tv"
+    },
+    "bugs": {
+        "url": "https://github.com/mattboston/status-bar-cursor-position/issues"
+    },
+    "homepage": "https://github.com/mattboston/status-bar-cursor-position",
+    "icon": "images/icon.png",
     "engines": {
-        "vscode": "^1.60.0"
+        "vscode": "^1.95.0"
     },
     "categories": [
         "Other"
     ],
+    "keywords": [
+        "cursor",
+        "status bar",
+        "cursor position"
+    ],
     "activationEvents": [
-        "*"
+        "onStartupFinished"
     ],
     "main": "./out/extension.js",
     "contributes": {},
     "devDependencies": {
-        "@types/vscode": "^1.95.0"
+        "@types/vscode": "^1.95.0",
+        "typescript": "^5.7.2"
     },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/mattboston/status-bar-cursor-position"
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./"
     }
 }
