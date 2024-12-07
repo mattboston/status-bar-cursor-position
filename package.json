@@ -2,7 +2,7 @@
     "name": "status-bar-cursor-position",
     "displayName": "Status Bar Cursor Position",
     "description": "Shows cursor position in status bar for Cursor Editor",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "license": "GPL-3.0",
     "publisher": "mattboston",
     "repository": {
@@ -20,7 +20,7 @@
     "homepage": "https://github.com/mattboston/status-bar-cursor-position",
     "icon": "images/icon.png",
     "engines": {
-        "vscode": "^1.95.0"
+        "vscode": "^1.93.0"
     },
     "categories": [
         "Other"
@@ -42,6 +42,7 @@
     "scripts": {
         "vscode:prepublish": "npm run compile",
         "compile": "tsc -p ./",
-        "watch": "tsc -watch -p ./"
+        "watch": "tsc -watch -p ./",
+        "package": "vsce package --out dist/"
     }
 }

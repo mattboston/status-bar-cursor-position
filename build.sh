@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install Visual Studio Code Extension
-npm install -g @vscode/vsce
+# npm install -g @vscode/vsce
 
 # Install npm dependencies
 npm install
@@ -10,10 +10,10 @@ npm install
 npm run compile
 
 # Login to the VS Code Marketplace
-vsce login mattboston
+# vsce login mattboston
 
 # Build the extension
-vsce package
+vsce package --out dist/
 
 # Publish the extension
 vsce publish
