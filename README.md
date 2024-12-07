@@ -2,6 +2,8 @@
 
 An extension that shows the current cursor position (line and column) in the status bar in Cursor Editor.
 
+![Status Bar Cursor Position](images/screenshot.png)
+
 ## Features
 
 Displays the current line and column number in the status bar in the format: `Ln X, Col Y`
