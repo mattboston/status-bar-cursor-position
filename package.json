@@ -36,13 +36,13 @@
     "main": "./out/extension.js",
     "contributes": {},
     "devDependencies": {
-        "@types/vscode": "^1.95.0",
+        "@types/vscode": "^1.93.0",
         "typescript": "^5.7.2"
     },
     "scripts": {
         "vscode:prepublish": "npm run compile",
         "compile": "tsc -p ./",
         "watch": "tsc -watch -p ./",
-        "package": "vsce package --out dist/"
+        "package": "vsce package --out dist/status-bar-cursor-position-${npm_package_version}.vsix"
     }
 }
